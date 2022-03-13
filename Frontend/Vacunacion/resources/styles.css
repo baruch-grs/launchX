@@ -14,7 +14,8 @@
 }
 
 .title {
-  width: 55%;
+  width: 40%;
+  padding-top: 1rem;
   align-items: center;
   font-size: large;
   color: #2e4ecc;
@@ -23,6 +24,7 @@
 
 .navigation-menu {
   display: grid;
+  width: 70%;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   text-align: center;
@@ -45,5 +47,5 @@
 }
 a {
   text-decoration: none;
-  color: rgb(184, 184, 184);
+  color: #6d7b93;
 }
