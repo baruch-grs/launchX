@@ -13,8 +13,24 @@
   width: 100%;
 }
 
+.welcome-text {
+  background-color: aliceblue;
+  position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
 .first-parallax {
   background-image: url(https://www.westend61.de/images/0001590530pw/nurse-with-syringe-and-serum-ADSF28304.jpg);
+  min-height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -48,6 +64,11 @@
   border-radius: 10px;
   box-shadow: 0 5px 9px #abbcea;
 
+}
+
+p > a{
+  color: #000;
+  font-size: larger;
 }
 a {
   text-decoration: none;
