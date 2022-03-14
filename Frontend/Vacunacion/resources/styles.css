@@ -24,6 +24,17 @@
 	color: #000;
 }
 
+.info-icons {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  fill: #ffd012;
+}
+
 .first-parallax {
   background-image: url(https://www.westend61.de/images/0001590530pw/nurse-with-syringe-and-serum-ADSF28304.jpg);
   min-height: 600px;
@@ -35,6 +46,7 @@
 }
 .information {
   color: #6d7b93;
+  text-align: center;
 }
 .welcome-title {
   align-items: center;
@@ -76,6 +88,11 @@
   border-radius: 10px;
   box-shadow: 0 5px 9px #abbcea;
 
+}
+
+.icon > p {
+  margin: 1rem;
+  color: #1f3e72
 }
 
 h2 > a{
