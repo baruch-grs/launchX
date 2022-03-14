@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.first-parallax {
+  background-image: url(https://www.westend61.de/images/0001590530pw/nurse-with-syringe-and-serum-ADSF28304.jpg);
+}
+
 .title {
   width: 40%;
   padding-top: 1rem;
