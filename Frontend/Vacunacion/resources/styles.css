@@ -44,6 +44,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.second-parallax {
+  background-image: url(https://media.istockphoto.com/photos/portrait-of-young-woman-putting-on-a-protective-mask-picture-id1217604429?k=20&m=1217604429&s=612x612&w=0&h=o1j3Bd64W7Igz23P7eHDzPrNCbCZ5c-FGWi2VccX2O0=);
+  min-height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .information {
   color: #6d7b93;
   text-align: center;
@@ -77,6 +87,30 @@
 }
 .item {
   margin: 2rem;
+}
+.cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+}
+
+.card {
+  padding: 1rem;
+  display: grid;
+  border: 5px solid #fafaff;
+  width: 74%;
+  border-radius: 10%;
+}
+
+.card-icon {
+  fill: #3151cf;
+}
+
+.card-title {
+  font-weight: lighter;
+  font-size: 20px;
+}
+.card:hover {
+  box-shadow: 0 5px 15px #e7eefb;
 }
 .button {
   background-color: #3757d5;
