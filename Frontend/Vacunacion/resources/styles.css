@@ -19,8 +19,36 @@
 	left: 0;
   padding: 1rem;
 	top: 40%;
-	width: 100%;
+	width: 98%;
+  height: 25%;
+  font-size: 18px;
+	color: #000;
+}
+
+.cards-container-third-section {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+}
+
+.second-parallax-info-container {
+  background-color: aliceblue;
+  position: absolute;
+	left: 0;
+  padding: 1rem;
+	top: 30%;
+	width: 98.28%;
   font-size: 20px;
+	color: #000;
+}
+
+.third-parallax-info-container {
+  background-color: aliceblue;
+  position: absolute;
+	left: 0;
+  padding: 1rem;
+	top: 30%;
+	width: 98.28%; 
+  font-size: 16px;
 	color: #000;
 }
 
@@ -46,7 +74,8 @@
 }
 
 .second-parallax {
-  background-image: url(https://media.istockphoto.com/photos/portrait-of-young-woman-putting-on-a-protective-mask-picture-id1217604429?k=20&m=1217604429&s=612x612&w=0&h=o1j3Bd64W7Igz23P7eHDzPrNCbCZ5c-FGWi2VccX2O0=);
+  position: relative;
+  background-image: url(https://www.westerndermatology.com/news-and-specials/wp-content/uploads/2020/05/woman-wearing-mask-e1590775123745.jpeg);
   min-height: 600px;
   width: 100%;
   background-attachment: fixed;
@@ -54,13 +83,26 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.third-parallax {
+  position: relative;
+  background-image: url(https://www.stockvault.net/data/2017/02/21/223812/preview16.jpg);
+  min-height: 600px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .information {
   color: #6d7b93;
   text-align: center;
 }
 .welcome-title {
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   color: #1f3e72;
   text-align: center;
 }
@@ -103,6 +145,18 @@
 
 .card-icon {
   fill: #3151cf;
+	grid-column: 1/3;
+	width: 57%;
+  display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+
+element {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
 }
 
 .card-title {
@@ -122,6 +176,29 @@
   border-radius: 10px;
   box-shadow: 0 5px 9px #abbcea;
 
+}
+.parallax-cards-container {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+  gap: 7rem;
+}
+.parallax-card {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  display: grid;
+  width: 74%;
+  border-radius: 10%;
+}
+.parallax-card:hover {
+  box-shadow: 0 10px 100px #e7eefb;
+
+}
+.p-card-icon {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column: 1/4;
+  align-items: center;
 }
 
 .icon > p {
