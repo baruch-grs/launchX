@@ -1,11 +1,28 @@
 .main {
   display: grid;
-  justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   padding: 2rem;
+}
+.pokedex {
+  display: grid;
+  height: auto;
+  border: 2px solid blue;
+  width: 30%;
   text-align: center;
+}
+.poke-info {
+  padding-right: 3rem;
 }
 
 .pokemon-img {
+  width: 15rem;
+  height: auto;
   justify-self: center;
+}
+
+.consult {
+  padding-left: 6rem;
+}
+ul {
+  list-style-type: none;
 }

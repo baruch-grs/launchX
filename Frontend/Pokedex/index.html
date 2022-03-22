@@ -12,10 +12,16 @@
 
 <body>
   <div class="main">
-    <img src="" alt="Pokemon" id="pokeImg" name="pokemonName" class="pokemon-img">
 
-    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
-    <button onclick="getPokemonInfo()">Cambiar Imágen</button>
+    <div class="pokedex">
+      <img src="" alt="Pokemon" id="pokeImg" name="pokemonName" class="pokemon-img">
+      <p class="poke-info" id="pokeInfo"></p>
+    </div>
+
+    <div class="consult">
+      <input type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+      <button onclick="getPokemonInfo()">Buscar pokemon</button>
+    </div>
   </div>
 </body>
 <footer>

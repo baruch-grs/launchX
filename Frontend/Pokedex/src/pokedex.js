@@ -5,10 +5,21 @@ const getPokemonInfo = async () => {
     let response = await fetch(url);
     response = await response.json();
     pokeImage(response.sprites.front_default);
-    let information = pokeInfo(response);
+    showPokeInfo(pokeInfo(response));
   } catch (error) {
     throw new Error('ERROR', error);
   }
+}
+const showPokeInfo = (data) => {
+  let element = document.getElementById('pokeInfo');
+  element.innerHTML = `
+    <ul>
+      <li> ${data.height} </li>
+      <li> ${data.weight} </li>
+      <li> ${data.types} </li>
+    </ul>
+
+  `;
 }
 
 const pokeImage = (url) => {
