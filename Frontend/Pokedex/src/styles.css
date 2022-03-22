@@ -1,0 +1,11 @@
+.main {
+  display: grid;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pokemon-img {
+  justify-self: center;
+}
