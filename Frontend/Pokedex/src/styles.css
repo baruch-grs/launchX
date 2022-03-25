@@ -9,10 +9,11 @@
   padding: 2rem;
 }
 .pokedex {
+  grid-template-rows: repeat(2, 1fr);
+  box-shadow: 17px -14px 5px #caf0f8;
   display: grid;
   height: auto;
-  border: 2px solid blue;
-  background-color: blue;
+  background-color: rgba(0, 118, 182, 0.6);
   border-radius: 15px;
   padding: 1rem;
   width: 30%;
@@ -27,9 +28,9 @@
   max-width: 30%;
   width: 30%;
   height: auto;
-  background-color: gray;
+  background-color: rgb(128, 128, 128, 0.7);
   justify-self: center;
-  border-radius: 10px;
+  border-radius: 99px;
 }
 
 .consult {

@@ -22,9 +22,9 @@ const showPokeInfo = (data) => {
   let element = document.getElementById('pokeInfo');
   element.innerHTML = `
     <ul>
-      <li> Height: ${data.height} </li>
-      <li> Weight: ${data.weight} </li>
-      <li> Types: ${data.types} </li>
+      <li> <h1>Height: ${data.height} </h1></li>
+      <li> <h1>Weight: ${data.weight} </h1></li>
+      <li> <h1>Types: ${data.types} </h1></li>
     </ul>
   `;
 }
