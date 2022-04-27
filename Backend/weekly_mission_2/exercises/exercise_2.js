@@ -82,3 +82,5 @@ console.log(`Ejercicios completados: ${sumOfExercises}`);
 const frontendFinished = explorers.some((explorer) => explorer.missions.frontend.exercisesFinished === true);
 console.log(`Frontend terminado: ${frontendFinished}`);
 
+const onboardingFinished = explorers.every((explorer) => explorer.missions.onboarding.isFinished === true);
+console.log(`Onboarding terminado: ${onboardingFinished}`);
