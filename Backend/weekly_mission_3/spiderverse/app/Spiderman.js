@@ -19,7 +19,12 @@ class Spiderman {
   get getAge() {
     return this.age;
   }
-  getInfo() {
+
+  set setMovies(movies) {
+    this.movies = movies;
+  }
+
+  sayHi() {
     return `Hey, I'm ${this.actor} from Marvel studio`;
   }
 }
