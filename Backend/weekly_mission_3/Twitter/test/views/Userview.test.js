@@ -17,4 +17,13 @@ describe('Test suite for UserView class', () => {
     const result = UserView.createUser(payload);
     expect(result.error).toMatch(/necesitan tener valores válidos/);
   });
+
+  test('Case 3. Return an error object when try to create a new user with a payload with missing propeties', () => {
+    const payload = {
+      username: '',
+      name: '',
+    };
+    const result = UserView.createUser(payload);
+    expect(result.error).toMatch(/necesitan tener valores válidos/);
+  });
 });
