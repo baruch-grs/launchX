@@ -26,4 +26,16 @@ describe('Test suite for UserView class', () => {
     const result = UserView.createUser(payload);
     expect(result.error).toMatch(/necesitan tener valores válidos/);
   });
+
+  test('Case 4. Create a user by given a valid payload', () => {
+    const payload = {
+      username: 'ezpk',
+      name: 'Baruch Guerra',
+      id: 0,
+    };
+    const result = UserView.createUser(payload);
+    expect(result.name).toBe('Baruch Guerra');
+    expect(result.username).toBe('ezpk');
+    expect(result.id).toBe(0);
+  });
 });
