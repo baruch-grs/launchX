@@ -13,7 +13,6 @@ class FizzBuzzService {
       explorer.trick = explorer.score;
       return explorer;
     }
-
   }
 }
 
