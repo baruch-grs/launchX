@@ -5,7 +5,6 @@ const explorers = Reader.readJsonFile('./explorers.json');
 describe('Test suite for ExplorerService class', () => {
   test('Case 1. Test for filter by mission method', () => {
     const result = ExplorerService.filterByMission(explorers, 'node');
-    console.log(result.length);
     expect(result).toBeDefined();
     expect(result.length).toBeGreaterThanOrEqual(1);
   });
