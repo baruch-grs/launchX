@@ -19,4 +19,10 @@ describe('Suite Test for FizzBuzzService class', () => {
     expect(result).toBeDefined();
     expect(result.trick).toBe('BUZZ');
   });
+  test('Case 4. Test for applyValidationInExplorer method, fourth use case when is divisible by 3 and 5', () => {
+    const explorer = { name: 'juan', score: 15 };
+    const result = FB.applyValidationInExplorer(explorer);
+    expect(result).toBeDefined();
+    expect(result.trick).toBe('FIZZBUZZ');
+  });
 });
