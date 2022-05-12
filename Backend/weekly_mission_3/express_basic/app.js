@@ -38,7 +38,5 @@ app.get('/explorers/:explorerName', (req, res) => {
   res.send(req.params);
 });
 
-// Con esto inicializamos esta app
-app.listen(port, () => {
-  console.log(`Example app on port ${port}`);
-});
+
+module.exports = app;

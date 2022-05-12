@@ -1,5 +1,5 @@
 {
-  "name": "express_basic",
+  "name": "fizzbuzz",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,11 @@
     "test": "node ./node_modules/.bin/jest",
     "start": "node index.js"
   },
-  "author": "Baruch Guerra",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.0",
     "supertest": "^6.2.3"
-  },
-  "dependencies": {
-    "express": "^4.18.1"
   }
 }

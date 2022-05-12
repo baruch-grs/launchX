@@ -6,13 +6,6 @@ const app = express();
 
 app.use(express.json()); // Indicamos que usaremos JSON
 
-// Puerto en que vamos a ver nuestra app: localhost:3000
-const port = 3000;
-
-// Con esto inicializamos esta app
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
 
 app.get('/v1/explorers', (req, res) => {
   console.log(`Api explorers GET ALL requests ${new Date()}`);
@@ -30,7 +23,6 @@ app.get('/v1/explorers', (req, res) => {
 app.get('/v1/explorers/:id', (req, res) => {
   console.log(`Api explorers GET request ${new Date()}`);
   console.log(`Getting explorers with id ${req.params.id}`);
-
   const explorer = { id: 1, name: 'Baruch' };
   res.status(200).json(explorer);
 });
@@ -56,3 +48,5 @@ app.delete('/v1/explorers/:id', (req, res) => {
   const requestBody = req.body;
   res.status(200).json({ msg: 'DELETED!!' });
 });
+
+module.exports = app;
